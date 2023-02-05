@@ -1,0 +1,10 @@
+2023-02-01 16:39:42   eval.py --dataset_folder /content/drive/MyDrive/tokyo_xs --groups_num 1 --epochs_num 3 --resume_model /content/drive/MyDrive/CosPlace/logs/default/2023-01-31_14-23-51/best_model.pth
+2023-02-01 16:39:42   Arguments: Namespace(L=2, M=10, N=5, alpha=30, augmentation_device='cuda', backbone='ResNet18', batch_size=32, brightness=0.7, classifiers_lr=0.01, contrast=0.7, dataset_folder='/content/drive/MyDrive/tokyo_xs', device='cuda', epochs_num=3, fc_output_dim=512, groups_num=1, hue=0.5, infer_batch_size=16, iterations_per_epoch=10000, lr=1e-05, min_images_per_class=10, num_workers=8, positive_dist_threshold=25, random_resized_crop=0.5, resume_model='/content/drive/MyDrive/CosPlace/logs/default/2023-01-31_14-23-51/best_model.pth', resume_train=None, saturation=0.7, save_dir='default', seed=0, test_set_folder='/content/drive/MyDrive/tokyo_xs/test', use_amp16=False)
+2023-02-01 16:39:42   The outputs are being saved in logs/default/2023-02-01_16-39-42
+2023-02-01 16:39:43   Train only layer3 and layer4 of the ResNet18, freeze the previous ones
+2023-02-01 16:39:44   There are 1 GPUs and 2 CPUs.
+2023-02-01 16:39:44   Loading model from /content/drive/MyDrive/CosPlace/logs/default/2023-01-31_14-23-51/best_model.pth
+2023-02-01 16:40:19   Extracting database descriptors for evaluation/testing
+2023-02-01 16:44:53   Extracting queries descriptors for evaluation/testing using batch size 1
+2023-02-01 16:45:09   Calculating recalls
+2023-02-01 16:45:09   < test - #q: 315; #db: 12771 >: R@1: 69.2, R@5: 85.4, R@10: 89.5, R@20: 93.0
